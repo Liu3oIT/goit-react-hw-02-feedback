@@ -3,12 +3,12 @@ import { FeedbackClients } from 'components/Statistics/feedbackclient';
 import { ButtonFeedBack } from 'components/buttonsfeedback/buttons';
 
 class Statistics extends React.Component {
+
   state = {
     good: 0,
     neutral: 0,
     bad: 0,
     total: 0,
-    visible: false,
   };
 
   handleClick = feedbackType => {
