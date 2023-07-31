@@ -1,4 +1,4 @@
-import Statistics from './feedback/Statistics';
+import Statistics from './Statistics/Statistics';
 export const App = () => {
   return (
     <div

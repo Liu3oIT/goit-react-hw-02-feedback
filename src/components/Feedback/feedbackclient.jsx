@@ -1,4 +1,4 @@
-import css from './feddbackclient.module.css';
+import css from './feedbackclient.module.css';
 export const FeedbackClients = ({
   onCountPositive,
   good,

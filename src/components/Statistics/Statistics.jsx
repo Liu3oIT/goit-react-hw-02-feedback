@@ -1,5 +1,5 @@
 import React from 'react';
-import { FeedbackClients } from 'components/Statistics/feedbackclient';
+import { FeedbackClients } from 'components/Feedback/feedbackclient';
 import { ButtonFeedBack } from 'components/buttonsfeedback/buttons';
 
 class Statistics extends React.Component {
