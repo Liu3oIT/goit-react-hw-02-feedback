@@ -1,8 +1,8 @@
 import React from 'react';
-import { FeedbackClients } from 'components/Feedback/feedbackclient';
-import { ButtonFeedBack } from 'components/buttonsfeedback/buttons';
+import { Statistics } from 'components/Feedback/feedbackclient';
+import { FeedbackOptions } from 'components/buttonsfeedback/buttons';
 
-class Statistics extends React.Component {
+class Feedback extends React.Component {
 
   state = {
     good: 0,
@@ -39,16 +39,14 @@ class Statistics extends React.Component {
   render() {
     return (
       <div>
-        <h1>Please leave feedback</h1>
-        <ButtonFeedBack
+        <FeedbackOptions
           onTotalFeedback={this.countTotalFeedback}
           handleClick={this.handleClick}
+          title={'Please leave feedback'}
         />
-
-        <h2>Statistics</h2>
-
         {this.state.visible ? (
-          <FeedbackClients
+          <Statistics
+            title={'Statistics'}
             onCountPositive={this.countPositiveFeedbackPercentage}
             good={this.state.good}
             bad={this.state.bad}
@@ -63,4 +61,4 @@ class Statistics extends React.Component {
   }
 }
 
-export default Statistics;
+export default Feedback;

@@ -1,4 +1,4 @@
-import Statistics from './Statistics/Statistics';
+import Feedback from './Statistics/Statistics';
 export const App = () => {
   return (
     <div
@@ -11,7 +11,7 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      <Statistics />
+      <Feedback />
     </div>
   );
 };
